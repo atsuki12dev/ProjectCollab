@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>http://localhost/ProjectCollab/</loc>
+      <lastmod>2026-03-25</lastmod>
+   </url>
+   <url>
+      <loc>http://localhost/ProjectCollab/pages/Main/</loc>
+      <lastmod>2026-03-20</lastmod>
+   </url>
+   <url>
+      <loc>http://localhost/ProjectCollab/pages/reg/</loc>
+      <lastmod>2026-03-25</lastmod>
+   </url>
+   <url>
+      <loc>http://localhost/ProjectCollab/pages/auth/</loc>
+      <lastmod>2026-03-15</lastmod>
+   </url>
+   <url>
+      <loc>http://localhost/ProjectCollab/pages/guest</loc>
+      <lastmod>2026-03-13</lastmod>
+   </url>
+</urlset>

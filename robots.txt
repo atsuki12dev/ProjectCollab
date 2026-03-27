@@ -1,0 +1,15 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*?*
+Disallow: /*.php$
+
+# Разрешаем основные пути
+Allow: /localhost/
+Allow: /localhost/ProjectCollab/
+
+# Карта сайта
+Sitemap: http://localhost/ProjectCollab/sitemap.xml
+
+# Хост (для Яндекса)
+Host: http://localhost/ProjectCollab/

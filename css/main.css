@@ -43,4 +43,371 @@ h2 {
 
 a {
   text-decoration: none;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 20px 10px 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+header p {
+  font-family: "FontRegular";
+  color: #fff;
+}
+header .menu {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+header .menu .auth_menu {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+header .menu p {
+  cursor: pointer;
+}
+
+.modal_add {
+  padding: 20px;
+  position: absolute;
+  left: 1400px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.modal_add .x {
+  margin-bottom: -20px;
+  width: 100%;
+  margin-right: 30px;
+  text-align: end;
+  font-family: "FontRegular";
+  font-size: 20px;
+  cursor: pointer;
+}
+.modal_add p {
+  font-family: "FontRegular";
+  font-size: 32px;
+  color: #fff;
+}
+.modal_add input {
+  width: 250px;
+  padding: 10px;
+  border: 0;
+  border-radius: 20px;
+  font-family: "FontRegular";
+  font-size: 12px;
+}
+.modal_add input::placeholder {
+  font-family: "FontRegular";
+  font-size: 12px;
+}
+.modal_add button {
+  width: 150px;
+  border: 0;
+  border-radius: 20px;
+  padding: 5px;
+  background-color: #000;
+  font-family: "FontRegular";
+  font-size: 12px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 920px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.container .content {
+  width: 1300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.container .content .row3 {
+  width: 1000px;
+  height: 820px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.container .content .row3 .profile {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.container .content .row3 .profile img {
+  width: 250px;
+  height: 250px;
+}
+.container .content .row3 .profile h1 {
+  font-family: "FontRegular";
+  font-size: 32px;
+  color: #fff;
+}
+.container .content .row3 .profile p {
+  font-family: "FontRegular";
+  font-size: 16px;
+  color: #fff;
+}
+.container .content .row3 .my {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container .content .row3 .my p {
+  font-family: "FontRegular";
+  font-size: 32px;
+  color: #fff;
+}
+.container .content .row3 .my h1 {
+  font-family: "FontRegular";
+  font-size: 24px;
+}
+.container .content .guest p {
+  font-family: "FontRegular";
+  line-height: 50px;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+}
+.container .content .reg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.container .content .reg p {
+  font-family: "FontRegular";
+  font-size: 32px;
+  color: #fff;
+}
+.container .content .reg input {
+  width: 250px;
+  padding: 10px;
+  border: 0;
+  border-radius: 20px;
+  font-family: "FontRegular";
+  font-size: 12px;
+}
+.container .content .reg input::placeholder {
+  font-family: "FontRegular";
+  font-size: 12px;
+}
+.container .content .reg button {
+  width: 150px;
+  border: 0;
+  border-radius: 20px;
+  padding: 5px;
+  background-color: #000;
+  font-family: "FontRegular";
+  font-size: 12px;
+  color: #fff;
+  cursor: pointer;
+}
+.container .content .auth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.container .content .auth p {
+  font-family: "FontRegular";
+  font-size: 32px;
+  color: #fff;
+}
+.container .content .auth input {
+  width: 250px;
+  padding: 10px;
+  border: 0;
+  border-radius: 20px;
+  font-family: "FontRegular";
+  font-size: 12px;
+}
+.container .content .auth input::placeholder {
+  font-family: "FontRegular";
+  font-size: 12px;
+}
+.container .content .auth button {
+  width: 150px;
+  border: 0;
+  border-radius: 20px;
+  padding: 5px;
+  background-color: #000;
+  font-family: "FontRegular";
+  font-size: 12px;
+  color: #fff;
+  cursor: pointer;
+}
+.container .content .projects {
+  width: 1200px;
+  height: 820px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+  justify-content: start;
+}
+.container .content .projects .row1 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.container .content .projects .row1 .filters_status {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.container .content .projects .row1 .filters_status button {
+  border: 0;
+  border-radius: 20px;
+  padding: 5px 10px 5px 10px;
+  font-family: "FontRegular";
+  font-size: 12px;
+  cursor: pointer;
+}
+.container .content .projects .row1 .filters_type {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.container .content .projects .row1 .filters_type button {
+  background-color: #000;
+  color: #fff;
+  border: 0;
+  border-radius: 20px;
+  padding: 5px 10px 5px 10px;
+  font-family: "FontRegular";
+  font-size: 12px;
+  cursor: pointer;
+}
+.container .content .projects .row1 .search input {
+  width: 250px;
+  border: 0;
+  padding: 5px;
+  border-radius: 30px;
+  font-family: "FontRegular";
+}
+.container .content .projects .row2 .col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container .content .projects .row2 .col .title {
+  font-family: "FontRegular";
+  color: #fff;
+}
+.container .content .projects .row2 .col .cards {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container .content .projects .row2 .col .cards .card {
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 15px;
+  flex-direction: column;
+  gap: 20px;
+  display: none;
+  border: 1px solid #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.container .content .projects .row2 .col .cards .card h1 {
+  color: #fff;
+  font-size: 28px;
+  font-family: "FontBold";
+}
+.container .content .projects .row2 .col .cards .card .desc .description {
+  line-height: 20px;
+  color: #fff;
+  font-size: 10px;
+  font-family: "FontBold";
+}
+.container .content .projects .row2 .col .cards .card.show {
+  display: flex;
+}
+.container .content .projects .row2 .col .cards .card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.container .content .projects .row2 .col .pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.container .content .projects .row2 .col .pagination button {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: "FontRegular";
+}
+.container .content .projects .row2 .col .pagination button:hover {
+  background: #e0e0e0;
+}
+.container .content .projects .row2 .col .pagination button.active {
+  background: #000;
+  color: white;
+  border-color: #000;
+}
+.container .left_imgBG {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .left_imgBG div {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.container .left_imgBG div img {
+  width: 75px;
+  height: 75px;
+}
+.container .left_imgBG div img:nth-of-type(2) {
+  margin-left: 50px;
+}
+.container .right_imgBG {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .right_imgBG div {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.container .right_imgBG div img {
+  width: 75px;
+  height: 75px;
+}
+.container .right_imgBG div img:nth-of-type(2) {
+  margin-left: 50px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 20px 10px 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+footer p {
+  font-family: "FontRegular";
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */

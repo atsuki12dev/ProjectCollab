@@ -7,12 +7,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/main.css">
-    <title>Регистрация</title>
+    <title>Профиль</title>
     <meta name="description" content="ProjectCollab - это не просто инструмент для создания доски задач, это проект объединяющий людей с общими целями чтобы творить будущее...">
 </head>
 <body>
     <header>
-        <p>ProjectCollab</p>
+        <a href="../Main/"><p>ProjectCollab</p></a>
         <div class="menu">
             <div class="auth_menu">
                 <?
@@ -26,7 +26,7 @@
                 ?>
             </div>
             <?
-                echo '<a href="../profile"><p>'. $_SESSION["login"] .'</p></a>';
+                echo '<p>'. $_SESSION["login"] .'</p>';
             ?>
         </div>
     </header>
@@ -39,14 +39,36 @@
             </div>
         </div>
         <div class="content">
-            <form action="../../scripts/php/reg.php" method="POST" class="reg">
-                <p>Регистрация</p>
-                <input type="text" name="login" placeholder="login..." required>
-                <input type="password" name="password" placeholder="password..." required>
-                <input type="password" name="retry_password" placeholder="retry password..." required>
-                <input type="text" name="email" placeholder="email...">
-                <button type="submit">подтвердить</button>
-            </form>
+            <div class="row3">
+                <div class="profile">
+                    <?php
+                        session_start();
+
+                        $connect = new mysqli("localhost","root","","ProjectCollab");
+
+                        $sql = sprintf("SELECT * FROM `users`");
+                        $result = $connect->query($sql);
+
+                        while($row = $result->fetch_assoc()){
+                            if($_SESSION['login'] == $row['login']){
+                                echo 
+                                '<img src="'.$row['ava'].'" alt="ava.png">
+                                <h1>'.$row['login'].'</h1>
+                                <p>'.$row['email'].'</p>';
+                            }
+                        }
+                    ?>
+                </div>
+                <div class="my">
+                    <p>Мои проекты: </p>
+                    <h1>Test1</h1>
+                    <h1>Test2</h1>
+                    <h1>Test3</h1>
+                    <h1>Test4</h1>
+                    <h1>Test5</h1>
+                    <h1>Test6</h1>
+                </div>
+            </div>
         </div>
         <div class="right_imgBG">
             <div>
